@@ -19,8 +19,6 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import com.econtabil.integration.domain.util.model.Endereco;
-
 @Entity
 @Table(name = "empresa")
 public class Empresa{

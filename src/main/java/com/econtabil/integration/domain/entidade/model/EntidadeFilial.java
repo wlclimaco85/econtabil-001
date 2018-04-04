@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.entidade.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.Endereco;
 import com.econtabil.integration.domain.banco.model.BancoPessoa;
 import com.econtabil.integration.domain.cnae.model.CnaeEmpresa;
 import com.econtabil.integration.domain.enumerate.Enum.EmpresaTypeEnum;
@@ -11,7 +12,6 @@ import com.econtabil.integration.domain.site.model.PlanoByEmpresa;
 import com.econtabil.integration.domain.site.model.Site;
 import com.econtabil.integration.domain.util.model.Documento;
 import com.econtabil.integration.domain.util.model.Email;
-import com.econtabil.integration.domain.util.model.Endereco;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 import com.econtabil.integration.domain.util.model.Telefone;
 

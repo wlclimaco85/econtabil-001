@@ -2,8 +2,8 @@
 package com.econtabil.integration.domain.nfe.model;
 
 
+import com.econtabil.integration.domain.Endereco;
 import com.econtabil.integration.domain.fiscal.model.Regime;
-import com.econtabil.integration.domain.util.model.Endereco;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

@@ -2,8 +2,6 @@ package com.econtabil.integration.domain;
 
 import java.util.List;
 
-import com.econtabil.integration.domain.util.model.Endereco;
-
 public class EmpresaDTO extends ModelDTO {
 
 	private int id;

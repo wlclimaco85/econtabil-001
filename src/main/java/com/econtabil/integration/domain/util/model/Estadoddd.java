@@ -5,7 +5,7 @@ package com.econtabil.integration.domain.util.model;
  * setting.
  */
 @SuppressWarnings("serial")
-public class Estado extends ModelCosmeDamiao
+public class Estadoddd extends ModelCosmeDamiao
 {
 	/** The SendSolv id for the account. */
 	private Integer id;
@@ -19,22 +19,22 @@ public class Estado extends ModelCosmeDamiao
 	/**
 	 * Default constructor.
 	 */
-	public Estado()
+	public Estadoddd()
 	{
 		super();
 	}
 
-	public Estado(Integer id)
+	public Estadoddd(Integer id)
 	{
 		super();
 		this.id = id;
 	}
 
-	public Estado(int i, String string) {
+	public Estadoddd(int i, String string) {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Estado(String string) {
+	public Estadoddd(String string) {
 		// TODO Auto-generated constructor stub
 	}
 

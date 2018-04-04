@@ -1,8 +1,8 @@
 /** create by system gera-java version 1.0.0 03/12/2016 13:29 : 12*/
 package com.econtabil.integration.domain.nfeItens.model;
 
+import com.econtabil.integration.domain.Estado;
 import com.econtabil.integration.domain.util.model.DoisValores;
-import com.econtabil.integration.domain.util.model.Estado;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.Estado;
 import com.econtabil.integration.domain.enumerate.Enum.DocumentoTypeEnum;
 import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 

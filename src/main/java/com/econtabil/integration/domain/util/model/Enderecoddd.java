@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.Estado;
 import com.econtabil.integration.domain.enumerate.Enum.EnderecoTypeEnum;
 import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
@@ -10,7 +11,7 @@ import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
  * setting.
  */
 @SuppressWarnings("serial")
-public class Endereco extends ModelCosmeDamiao
+public class Enderecoddd extends ModelCosmeDamiao
 {
 	/** The SendSolv id for the account. */
 	private Integer id;
@@ -49,7 +50,7 @@ public class Endereco extends ModelCosmeDamiao
 	 */
 
 
-	public Endereco(Integer id, String logradouro, Cidade cidade, Estado estado, String bairro, String numero,
+	public Enderecoddd(Integer id, String logradouro, Cidade cidade, Estado estado, String bairro, String numero,
 			String cep, String complemento, EnderecoTypeEnum enderecoType, PersistenceActionEnum modelAction)
 	{
 		super();
@@ -67,7 +68,7 @@ public class Endereco extends ModelCosmeDamiao
 		setModifyUser("system");
 	}
 
-	public Endereco() {
+	public Enderecoddd() {
 		super();
 	}
 

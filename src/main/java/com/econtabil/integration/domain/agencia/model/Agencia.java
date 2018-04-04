@@ -2,10 +2,10 @@ package com.econtabil.integration.domain.agencia.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.Endereco;
 import com.econtabil.integration.domain.banco.model.Banco;
 import com.econtabil.integration.domain.conta.model.Conta;
 import com.econtabil.integration.domain.util.model.Email;
-import com.econtabil.integration.domain.util.model.Endereco;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 import com.econtabil.integration.domain.util.model.Telefone;
 

@@ -2,11 +2,11 @@
 package com.econtabil.integration.domain.nf.model;
 
 
+import com.econtabil.integration.domain.Estado;
 import com.econtabil.integration.domain.cfop.model.Cfop;
 import com.econtabil.integration.domain.contabilidade.model.Plano;
 import com.econtabil.integration.domain.produto.model.ProdutoEmpresa;
 import com.econtabil.integration.domain.produto.model.Servico;
-import com.econtabil.integration.domain.util.model.Estado;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

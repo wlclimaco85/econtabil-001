@@ -2,8 +2,8 @@ package com.econtabil.integration.domain.produto.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.Endereco;
 import com.econtabil.integration.domain.util.model.Email;
-import com.econtabil.integration.domain.util.model.Endereco;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 import com.econtabil.integration.domain.util.model.Telefone;
 

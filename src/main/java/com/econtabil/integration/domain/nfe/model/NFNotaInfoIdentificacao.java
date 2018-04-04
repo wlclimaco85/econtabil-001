@@ -4,9 +4,9 @@ package com.econtabil.integration.domain.nfe.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.Estado;
 import com.econtabil.integration.domain.condpag.model.FormaPg;
 import com.econtabil.integration.domain.util.model.DoisValores;
-import com.econtabil.integration.domain.util.model.Estado;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
