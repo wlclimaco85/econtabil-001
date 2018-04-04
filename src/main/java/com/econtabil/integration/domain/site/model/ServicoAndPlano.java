@@ -1,10 +1,11 @@
-package com.qat.samples.sysmgmt.site.model;
+package com.econtabil.integration.domain.site.model;
 
 import java.util.Date;
 
-import com.qat.samples.sysmgmt.contabilidade.model.Plano;
-import com.qat.samples.sysmgmt.produto.model.Servico;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.contabilidade.model.Plano;
+import com.econtabil.integration.domain.enumerate.Enum.ServicoPlanoEnum;
+import com.econtabil.integration.domain.produto.model.Servico;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -27,19 +28,6 @@ public class ServicoAndPlano extends ModelCosmeDamiao
 
 	private Plano planoList;
 
-	public Integer getServicoPlanoEnumValue()
-	{
-		if (servicoPlano != null)
-		{
-			return servicoPlano.getValue();
-		}
-		return null;
-	}
-
-	public void setServicoPlanoEnumValue(Integer acaoTypeValue)
-	{
-		servicoPlano = ServicoPlanoEnum.enumForValue(acaoTypeValue);
-	}
 
 	public ServicoAndPlano()
 	{
@@ -102,7 +90,7 @@ public class ServicoAndPlano extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "ServicoAndPlano [getServicoPlanoEnumValue()=" + getServicoPlanoEnumValue() + ", getId()=" + getId()
+		return "ServicoAndPlano [getId()=" + getId()
 				+ ", getValor()=" + getValor() + ", getDataInicio()=" + getDataInicio() + ", getServicoPlano()="
 				+ getServicoPlano() + ", getServicoList()=" + getServicoList() + ", getPlanoList()=" + getPlanoList()
 				+ ", toString()=" + super.toString() + "]";

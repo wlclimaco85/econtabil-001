@@ -2,7 +2,8 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
-import com.econtabil.integration.domain.Estado;
+import com.econtabil.integration.domain.enumerate.Enum.DocumentoTypeEnum;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -27,20 +28,6 @@ public class Documento extends ModelCosmeDamiao
 	/** The estado. */
 	private Estado estado;
 
-	public Integer getDocumentoTypeEnumValue()
-	{
-		if (documentoType != null)
-		{
-			return documentoType.getValue();
-		}
-		return null;
-	}
-
-	public void setDocumentoTypeEnumValue(Integer acaoTypeValue)
-	{
-		documentoType = DocumentoTypeEnum.enumForValue(acaoTypeValue);
-	}
-
 	/**
 	 * Default constructor.
 	 */
@@ -58,7 +45,6 @@ public class Documento extends ModelCosmeDamiao
 		this.numero = numero;
 		this.data = data;
 		this.estado = estado;
-		setModelAction(modelAction);
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 	}
@@ -162,7 +148,7 @@ public class Documento extends ModelCosmeDamiao
 	@Override
 	public String toString()
 	{
-		return "Documento [getDocumentoTypeEnumValue()=" + getDocumentoTypeEnumValue() + ", getId()=" + getId()
+		return "Documento [getId()=" + getId()
 				+ ", getDocumentoType()=" + getDocumentoType() + ", getNumero()=" + getNumero() + ", getData()="
 				+ getData() + ", getEstado()=" + getEstado() + ", toString()=" + super.toString() + "]";
 	}

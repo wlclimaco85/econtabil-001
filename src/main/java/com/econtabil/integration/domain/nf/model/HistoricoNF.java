@@ -1,5 +1,6 @@
 package com.econtabil.integration.domain.nf.model;
 
+import com.econtabil.integration.domain.enumerate.Enum.NotaTypeEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
@@ -18,19 +19,6 @@ public class HistoricoNF extends ModelCosmeDamiao
 
 	private NotaTypeEnum notaTypeEnum;
 
-	public Integer getNotaTypeEnumValue()
-	{
-		if (notaTypeEnum != null)
-		{
-			return notaTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setNotaTypeEnumValue(Integer acaoTypeValue)
-	{
-		notaTypeEnum = NotaTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	public HistoricoNF(Long data, NotaTypeEnum notaTypeEnum)
 	{
@@ -93,7 +81,7 @@ public class HistoricoNF extends ModelCosmeDamiao
 	@Override
 	public String toString()
 	{
-		return "HistoricoNF [getNotaTypeEnumValue()=" + getNotaTypeEnumValue() + ", getId()=" + getId()
+		return "HistoricoNF [getId()=" + getId()
 				+ ", getNotaId()=" + getNotaId() + ", getData()=" + getData() + ", getNotaTypeEnum()="
 				+ getNotaTypeEnum() + ", toString()=" + super.toString() + "]";
 	}

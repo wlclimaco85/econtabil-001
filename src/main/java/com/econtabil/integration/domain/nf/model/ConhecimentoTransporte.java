@@ -4,8 +4,8 @@ package com.econtabil.integration.domain.nf.model;
 
 import com.econtabil.integration.domain.pessoa.model.Transportador;
 import com.econtabil.integration.domain.produto.model.Marca;
+import com.econtabil.integration.domain.util.model.Estado;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
-import com.qat.samples.sysmgmt.estado.model.Estado;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

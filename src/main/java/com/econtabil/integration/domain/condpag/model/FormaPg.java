@@ -1,6 +1,7 @@
 package com.econtabil.integration.domain.condpag.model;
 
 import com.econtabil.integration.domain.conta.model.Conta;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.DoisValores;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 

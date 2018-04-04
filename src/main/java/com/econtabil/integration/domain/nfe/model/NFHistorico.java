@@ -1,7 +1,7 @@
 /** create by system gera-java version 1.0.0 28/09/2016 14:58 : 22*/
 package com.econtabil.integration.domain.nfe.model;
 
-import com.econtabil.integration.domain.nf.model.NotaTypeEnum;
+import com.econtabil.integration.domain.enumerate.Enum.NotaTypeEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
@@ -22,26 +22,6 @@ public class NFHistorico extends ModelCosmeDamiao {
 	/** The tipo NF enum. */
 	private NotaTypeEnum tipoNFEnum;
 
-	/**
-	 * Gets the nota type enum value.
-	 *
-	 * @return the nota type enum value
-	 */
-	public Integer getTipoNFEnumValue() {
-		if (tipoNFEnum != null) {
-			return tipoNFEnum.getValue();
-		}
-		return null;
-	}
-
-	/**
-	 * Sets the nota type enum value.
-	 *
-	 * @param acaoTypeValue the new nota type enum value
-	 */
-	public void setTipoNFEnumValue(Integer acaoTypeValue) {
-		tipoNFEnum = NotaTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	/**
 	 * Default constructor.
@@ -105,7 +85,7 @@ public class NFHistorico extends ModelCosmeDamiao {
 
 	@Override
 	public String toString() {
-		return "NFHistorico [getNotaTypeEnumValue()=" + getTipoNFEnumValue() + ", getId()=" + getId()
+		return "NFHistorico [getId()=" + getId()
 				+ ", getDateAlter()=" + getDateAlter() + ", getUser()=" + getUser() + ", getTipoNFEnum()="
 				+ getTipoNFEnum() + ", toString()=" + super.toString() + "]";
 	}

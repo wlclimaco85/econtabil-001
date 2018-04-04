@@ -1,10 +1,10 @@
-package com.qat.samples.sysmgmt.pessoa.model;
+package com.econtabil.integration.domain.pessoa.model;
 
 import java.util.Date;
 import java.util.List;
 
-import com.qat.samples.sysmgmt.cfop.model.Cfop;
-import com.qat.samples.sysmgmt.cfop.model.CfopParentId;
+import com.econtabil.integration.domain.cfop.model.CfopParentId;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

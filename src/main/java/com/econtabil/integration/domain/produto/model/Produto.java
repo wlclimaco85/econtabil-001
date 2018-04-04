@@ -1,11 +1,11 @@
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
-import com.qat.samples.sysmgmt.nfeItens.model.NFNotaInfoItemProdutoArmamento;
-import com.qat.samples.sysmgmt.nfeItens.model.NFNotaInfoItemProdutoCombustivel;
-import com.qat.samples.sysmgmt.nfeItens.model.NFNotaInfoItemProdutoMedicamento;
-import com.qat.samples.sysmgmt.nfeItens.model.NFNotaInfoItemProdutoVeiculo;
-import com.qat.samples.sysmgmt.util.model.DoisValores;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.nfeItens.model.NFNotaInfoItemProdutoArmamento;
+import com.econtabil.integration.domain.nfeItens.model.NFNotaInfoItemProdutoCombustivel;
+import com.econtabil.integration.domain.nfeItens.model.NFNotaInfoItemProdutoMedicamento;
+import com.econtabil.integration.domain.nfeItens.model.NFNotaInfoItemProdutoVeiculo;
+import com.econtabil.integration.domain.util.model.DoisValores;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

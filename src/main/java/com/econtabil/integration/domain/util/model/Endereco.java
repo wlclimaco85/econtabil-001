@@ -2,7 +2,8 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
-import com.econtabil.integration.domain.Estado;
+import com.econtabil.integration.domain.enumerate.Enum.EnderecoTypeEnum;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -68,20 +69,6 @@ public class Endereco extends ModelCosmeDamiao
 
 	public Endereco() {
 		super();
-	}
-
-	public Integer getEnderecoTypeValue()
-	{
-		if (enderecoType != null)
-		{
-			return enderecoType.getValue();
-		}
-		return null;
-	}
-
-	public void setEnderecoTypeValue(Integer acaoTypeValue)
-	{
-		enderecoType = EnderecoTypeEnum.enumForValue(acaoTypeValue);
 	}
 
 	/**
@@ -262,7 +249,7 @@ public class Endereco extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "Endereco [getEnderecoTypeValue()=" + getEnderecoTypeValue() + ", getId()=" + getId()
+		return "Endereco [getId()=" + getId()
 				+ ", getLogradouro()=" + getLogradouro() + ", getCidade()=" + getCidade() + ", getBairro()=" + getBairro()
 				+ ", getNumero()=" + getNumero() + ", getCep()="
 				+ getCep() + ", getComplemento()=" + getComplemento() + ", getEnderecoType()=" + getEnderecoType()

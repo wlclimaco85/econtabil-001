@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.financeiro.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.ContasTypeEnum;
 import com.econtabil.integration.domain.nf.model.NotaFiscalEntrada;
 import com.econtabil.integration.domain.nf.model.NotaFiscalSaida;
 import com.econtabil.integration.domain.pessoa.model.Cliente;
@@ -47,7 +48,7 @@ public class Financeiro extends ModelCosmeDamiao
 
 	private Double valor;
 
-	private FinanceiroStatusEnum financeiroEnum;
+	private ContasTypeEnum financeiroEnum;
 
 	private List<BaixaTitulo> listBaixa;
 
@@ -189,12 +190,12 @@ public class Financeiro extends ModelCosmeDamiao
 		this.valor = valor;
 	}
 
-	public FinanceiroStatusEnum getFinanceiroEnum()
+	public ContasTypeEnum getFinanceiroEnum()
 	{
 		return financeiroEnum;
 	}
 
-	public void setFinanceiroEnum(FinanceiroStatusEnum financeiroEnum)
+	public void setFinanceiroEnum(ContasTypeEnum financeiroEnum)
 	{
 		this.financeiroEnum = financeiroEnum;
 	}

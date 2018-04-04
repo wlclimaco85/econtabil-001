@@ -1,6 +1,7 @@
 package com.econtabil.integration.domain.banco.model;
 
 import com.econtabil.integration.domain.agencia.model.Agencia;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

@@ -2,6 +2,9 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.enumerate.Enum.EmailTypeEnum;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
+
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
  * setting.
@@ -36,21 +39,6 @@ public class Email extends ModelCosmeDamiao
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 	}
-
-	public Integer getEmailTypeEnumValue()
-	{
-		if (emailType != null)
-		{
-			return emailType.getValue();
-		}
-		return null;
-	}
-
-	public void setEmailTypeEnumValue(Integer acaoTypeValue)
-	{
-		emailType = EmailTypeEnum.enumForValue(acaoTypeValue);
-	}
-
 	/**
 	 * Gets the id.
 	 *
@@ -106,7 +94,7 @@ public class Email extends ModelCosmeDamiao
 	@Override
 	public String toString()
 	{
-		return "Email [getEmailTypeEnumValue()=" + getEmailTypeEnumValue() + ", getId()=" + getId() + ", getEmail()="
+		return "Email [getId()=" + getId() + ", getEmail()="
 				+ getEmail() + ", getEmailType()=" + getEmailType() + ", toString()=" + super.toString() + "]";
 	}
 

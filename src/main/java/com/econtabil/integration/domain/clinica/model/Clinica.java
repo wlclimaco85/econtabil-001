@@ -3,7 +3,7 @@ package com.econtabil.integration.domain.clinica.model;
 import java.util.Date;
 
 import com.econtabil.integration.domain.entidade.model.Entidade;
-import com.econtabil.integration.domain.entidade.model.EntidadeTypeEnum;
+import com.econtabil.integration.domain.enumerate.Enum.EmpresaTypeEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -30,7 +30,7 @@ public class Clinica extends Entidade
 		super();
 		setId(id);
 		setNome(nome);
-		setEntidadeEnum(EntidadeTypeEnum.CLINICA);
+		setEntidadeEnum(EmpresaTypeEnum.CLINICA);
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 	}

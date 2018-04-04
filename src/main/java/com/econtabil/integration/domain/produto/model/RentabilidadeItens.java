@@ -1,7 +1,7 @@
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
-import com.qat.samples.sysmgmt.util.model.TabelaEnum;
+import com.econtabil.integration.domain.enumerate.Enum.RentabilidadeTypeEnum;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -30,19 +30,6 @@ public class RentabilidadeItens extends ModelCosmeDamiao
 		super();
 	}
 
-	public void setRentabilidadeTypeEnumValue(Integer acaoTypeValue)
-	{
-		rentabilidadeTypeEnum = RentabilidadeTypeEnum.enumForValue(acaoTypeValue);
-	}
-
-	public Integer getRentabilidadeTypeEnumValue()
-	{
-		if (rentabilidadeTypeEnum != null)
-		{
-			return rentabilidadeTypeEnum.getValue();
-		}
-		return null;
-	}
 
 	/**
 	 * Gets the id.

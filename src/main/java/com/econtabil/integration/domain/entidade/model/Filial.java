@@ -3,6 +3,8 @@ package com.econtabil.integration.domain.entidade.model;
 import java.util.Date;
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.EmpresaTypeEnum;
+
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
  * setting.
@@ -41,7 +43,7 @@ public class Filial extends Entidade
 		super();
 		setId(id);
 		setNome(nome);
-		setEntidadeEnum(EntidadeTypeEnum.ADVOCACIA);
+		setEntidadeEnum(EmpresaTypeEnum.ADVOCACIA);
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 	}

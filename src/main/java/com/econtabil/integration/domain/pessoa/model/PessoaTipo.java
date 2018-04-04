@@ -1,9 +1,11 @@
-package com.qat.samples.sysmgmt.pessoa.model;
+package com.econtabil.integration.domain.pessoa.model;
 
 
 import java.util.Date;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
+import com.econtabil.integration.domain.enumerate.Enum.PessoaTypeEnum;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -29,19 +31,7 @@ public class PessoaTipo extends ModelCosmeDamiao
 		super();
 	}
 
-	public Integer getPessoaTypeEnumValue()
-	{
-		if (pessoaTypeEnum != null)
-		{
-			return pessoaTypeEnum.getValue();
-		}
-		return null;
-	}
 
-	public void setPessoaTypeEnumValue(Integer acaoTypeValue)
-	{
-		pessoaTypeEnum = PessoaTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 
 
@@ -84,7 +74,7 @@ public class PessoaTipo extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "PessoaTipo [getPessoaTypeEnumValue()=" + getPessoaTypeEnumValue() + ", getId()=" + getId()
+		return "PessoaTipo [getId()=" + getId()
 				+ ", getPessoaTypeEnum()=" + getPessoaTypeEnum() + ", toString()=" + super.toString() + "]";
 	}
 

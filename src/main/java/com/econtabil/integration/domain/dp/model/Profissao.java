@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.dp.model;
 
 import javax.tools.DocumentationTool.Location;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

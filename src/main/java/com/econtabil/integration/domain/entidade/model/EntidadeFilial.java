@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.econtabil.integration.domain.banco.model.BancoPessoa;
 import com.econtabil.integration.domain.cnae.model.CnaeEmpresa;
+import com.econtabil.integration.domain.enumerate.Enum.EmpresaTypeEnum;
 import com.econtabil.integration.domain.fiscal.model.Regime;
 import com.econtabil.integration.domain.pessoa.model.Socio;
 import com.econtabil.integration.domain.site.model.PlanoByEmpresa;
@@ -57,7 +58,7 @@ public class EntidadeFilial extends ModelCosmeDamiao {
 	private Integer primeiroAcesso;
 
 	/** The entidade enum. */
-	private EntidadeTypeEnum entidadeEnum;
+	private EmpresaTypeEnum entidadeEnum;
 
 	/** The configuracao. */
 	private Configuracao configuracao;
@@ -148,27 +149,6 @@ public class EntidadeFilial extends ModelCosmeDamiao {
 	}
 
 	/**
-	 * Gets the permissao type enum value.
-	 *
-	 * @return the permissao type enum value
-	 */
-	public Integer getPermissaoTypeEnumValue() {
-		if (permissaoTypeEnum != null) {
-			return permissaoTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	/**
-	 * Sets the permissao type enum value.
-	 *
-	 * @param acaoTypeValue the new permissao type enum value
-	 */
-	public void setPermissaoTypeEnumValue(Integer acaoTypeValue) {
-		permissaoTypeEnum = EmpresaTypeEnum.enumForValue(acaoTypeValue);
-	}
-
-	/**
 	 * Gets the permissao type enum.
 	 *
 	 * @return the permissao type enum
@@ -186,26 +166,6 @@ public class EntidadeFilial extends ModelCosmeDamiao {
 		this.permissaoTypeEnum = permissaoTypeEnum;
 	}
 
-	/**
-	 * Gets the entidade enum value.
-	 *
-	 * @return the entidade enum value
-	 */
-	public Integer getEntidadeEnumValue() {
-		if (entidadeEnum != null) {
-			return entidadeEnum.getValue();
-		}
-		return null;
-	}
-
-	/**
-	 * Sets the entidade enum value.
-	 *
-	 * @param acaoTypeValue the new entidade enum value
-	 */
-	public void setEntidadeEnumValue(Integer acaoTypeValue) {
-		entidadeEnum = EntidadeTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	/**
 	 * Gets the id.
@@ -356,7 +316,7 @@ public class EntidadeFilial extends ModelCosmeDamiao {
 	 *
 	 * @return the entidadeEnum
 	 */
-	public EntidadeTypeEnum getEntidadeEnum() {
+	public EmpresaTypeEnum getEntidadeEnum() {
 		return entidadeEnum;
 	}
 
@@ -365,7 +325,7 @@ public class EntidadeFilial extends ModelCosmeDamiao {
 	 *
 	 * @param entidadeEnum            the entidadeEnum to set
 	 */
-	public void setEntidadeEnum(EntidadeTypeEnum entidadeEnum) {
+	public void setEntidadeEnum(EmpresaTypeEnum entidadeEnum) {
 		this.entidadeEnum = entidadeEnum;
 	}
 
@@ -651,8 +611,8 @@ public class EntidadeFilial extends ModelCosmeDamiao {
 	@Override
 	public String toString() {
 		return "Entidade [getUsuarios()=" + getUsuarios() + ", getBancos()=" + getBancos()
-				+ ", getPermissaoTypeEnumValue()=" + getPermissaoTypeEnumValue() + ", getPermissaoTypeEnum()="
-				+ getPermissaoTypeEnum() + ", getEntidadeEnumValue()=" + getEntidadeEnumValue() + ", getId()=" + getId()
+				+ ", getPermissaoTypeEnum()="
+				+ getPermissaoTypeEnum() + ", getId()=" + getId()
 				+ ", getNome()=" + getNome() + ", getEnderecos()=" + getEnderecos() + ", getDocumentos()="
 				+ getDocumentos() + ", getEmails()=" + getEmails() + ", getTelefones()=" + getTelefones()
 				+ ", getCnaes()=" + getCnaes() + ", getRegime()=" + getRegime() + ", getEntidadeEnum()="

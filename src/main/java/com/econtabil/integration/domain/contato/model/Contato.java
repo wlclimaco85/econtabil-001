@@ -1,5 +1,6 @@
 package com.econtabil.integration.domain.contato.model;
 
+import com.econtabil.integration.domain.enumerate.Enum.ContatoTypeEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 // TODO: Auto-generated Javadoc
@@ -32,21 +33,6 @@ public class Contato extends ModelCosmeDamiao
 	private ContatoTypeEnum motivo;
 
 	private String texto;
-
-
-	public Integer getMotivoValue()
-	{
-		if (motivo != null)
-		{
-			return motivo.getValue();
-		}
-		return null;
-	}
-
-	public void setMotivoValue(Integer acaoTypeValue)
-	{
-		motivo = ContatoTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	public Integer getId() {
 		return id;
@@ -122,7 +108,7 @@ public class Contato extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "Contato [getMotivoValue()=" + getMotivoValue() + ", getId()=" + getId() + ", getDataContato()="
+		return "Contato [getDataContato()="
 				+ getDataContato() + ", getNome()=" + getNome() + ", getEmail()=" + getEmail() + ", getTelefone()="
 				+ getTelefone() + ", getMotivo()=" + getMotivo() + ", getTexto()=" + getTexto() + ", getLido()="
 				+ getLido() + ", getAssunto()=" + getAssunto() + ", toString()=" + super.toString() + "]";

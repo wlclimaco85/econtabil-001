@@ -4,6 +4,9 @@ import java.util.Date;
 
 import javax.xml.bind.annotation.XmlType;
 
+import com.econtabil.integration.domain.enumerate.Enum.AcaoEnum;
+import com.econtabil.integration.domain.enumerate.Enum.TabelaEnum;
+
 /**
  * The Model Object Procedure.
  */
@@ -29,13 +32,13 @@ public class ControleAcess extends ModelCosmeDamiao
 	private String userId;
 
 	/** The table enum. */
-	private TableTypeEnum tableEnum;
+	private TabelaEnum tableEnum;
 
 	/** The acao id. */
 	private Integer acaoId;
 
 	/** The acao. */
-	private AcaoTypeEnum acao;
+	private AcaoEnum acao;
 
 	/**
 	 * Gets the user id.
@@ -62,7 +65,7 @@ public class ControleAcess extends ModelCosmeDamiao
 	 *
 	 * @return the table enum
 	 */
-	public TableTypeEnum getTableEnum()
+	public TabelaEnum getTableEnum()
 	{
 		return tableEnum;
 	}
@@ -72,7 +75,7 @@ public class ControleAcess extends ModelCosmeDamiao
 	 *
 	 * @param tableEnum the new table enum
 	 */
-	public void setTableEnum(TableTypeEnum tableEnum)
+	public void setTableEnum(TabelaEnum tableEnum)
 	{
 		this.tableEnum = tableEnum;
 	}
@@ -129,7 +132,7 @@ public class ControleAcess extends ModelCosmeDamiao
 	 * @param tenantId the tenant id
 	 * @param acao the acao
 	 */
-	public ControleAcess(Integer controleid, String local, Date data, Integer tenantId, AcaoTypeEnum acao)
+	public ControleAcess(Integer controleid, String local, Date data, Integer tenantId, AcaoEnum acao)
 	{
 		super();
 		this.controleid = controleid;
@@ -170,8 +173,8 @@ public class ControleAcess extends ModelCosmeDamiao
 	 * @param acaoId the acao id
 	 * @param acao the acao
 	 */
-	public ControleAcess(Integer controleid, Date data, Integer tenantId, String userId, TableTypeEnum tableEnum,
-			Integer acaoId, AcaoTypeEnum acao)
+	public ControleAcess(Integer controleid, Date data, Integer tenantId, String userId, TabelaEnum tableEnum,
+			Integer acaoId, AcaoEnum acao)
 	{
 		super();
 		this.controleid = controleid;
@@ -248,7 +251,7 @@ public class ControleAcess extends ModelCosmeDamiao
 	 *
 	 * @return the acao
 	 */
-	public AcaoTypeEnum getAcao()
+	public AcaoEnum getAcao()
 	{
 		return acao;
 	}
@@ -258,53 +261,9 @@ public class ControleAcess extends ModelCosmeDamiao
 	 *
 	 * @param acao the new acao
 	 */
-	public void setAcao(AcaoTypeEnum acao)
+	public void setAcao(AcaoEnum acao)
 	{
 		this.acao = acao;
-	}
-
-	/**
-	 * Methods that follow the naming pattern get.....Value() provide convenience for returning the primitive value of
-	 * an enum. For example, database mapping of an enum to a database column could make use of this method.
-	 *
-	 * @return the acao type value
-	 */
-	public Integer getAcaoTypeValue()
-	{
-		return acao.getValue();
-	}
-
-	/**
-	 * Methods that follow the naming pattern set.....Value(argValue) provide convenience for assigning the primitive
-	 * value of an enum. For example, database mapping of an database column to an enum could make use of this method.
-	 *
-	 * @param cadastroTypeValue the new acao type value
-	 */
-	public void setAcaoTypeValue(Integer cadastroTypeValue)
-	{
-		acao = AcaoTypeEnum.enumForValue(cadastroTypeValue);
-	}
-
-	/**
-	 * Methods that follow the naming pattern get.....Value() provide convenience for returning the primitive value of
-	 * an enum. For example, database mapping of an enum to a database column could make use of this method.
-	 *
-	 * @return the table type value
-	 */
-	public Integer getTableTypeValue()
-	{
-		return tableEnum.getValue();
-	}
-
-	/**
-	 * Methods that follow the naming pattern set.....Value(argValue) provide convenience for assigning the primitive
-	 * value of an enum. For example, database mapping of an database column to an enum could make use of this method.
-	 *
-	 * @param cadastroTypeValue the new table type value
-	 */
-	public void setTableTypeValue(Integer cadastroTypeValue)
-	{
-		tableEnum = TableTypeEnum.enumForValue(cadastroTypeValue);
 	}
 
 	/*
@@ -317,8 +276,7 @@ public class ControleAcess extends ModelCosmeDamiao
 		return "ControleAcess [getUserId()=" + getUserId() + ", getTableEnum()=" + getTableEnum() + ", getAcaoId()="
 				+ getAcaoId() + ", getControleid()=" + getControleid() + ", getLocal()="
 				+ getLocal() + ", getData()=" + getData() + ", getTenantId()=" + getTenantId() + ", getAcao()="
-				+ getAcao() + ", getAcaoTypeValue()=" + getAcaoTypeValue() + ", getTableTypeValue()="
-				+ getTableTypeValue() + ", toString()=" + super.toString() + "]";
+				+ getAcao()  + ", toString()=" + super.toString() + "]";
 	}
 
 }

@@ -2,6 +2,8 @@ package com.econtabil.integration.domain.contato.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.enumerate.Enum.ContatoStatusEnum;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 // TODO: Auto-generated Javadoc
@@ -28,20 +30,6 @@ public class ContatoItens extends ModelCosmeDamiao
 	private ContatoStatusEnum contatoStatus;
 
 	private boolean visto;
-
-	public Integer getContatoStatusValue()
-	{
-		if (contatoStatus != null)
-		{
-			return contatoStatus.getValue();
-		}
-		return null;
-	}
-
-	public void setContatoStatusValue(Integer acaoTypeValue)
-	{
-		contatoStatus = ContatoStatusEnum.enumForValue(acaoTypeValue);
-	}
 
 	/**
 	 * Default constructor.

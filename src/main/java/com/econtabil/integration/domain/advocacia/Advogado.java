@@ -3,11 +3,13 @@ package com.econtabil.integration.domain.advocacia;
 import java.util.Date;
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.pessoa.model.Pessoa;
 import com.econtabil.integration.domain.util.model.Compromisso;
 import com.econtabil.integration.domain.util.model.DiasHoras;
 import com.econtabil.integration.domain.util.model.DoisValores;
 import com.econtabil.integration.domain.util.model.DoisValoresParent;
+import com.econtabil.integration.domain.util.model.Estado;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.).

@@ -2,8 +2,8 @@ package com.econtabil.integration.domain.advocacia;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
-import com.qat.framework.model.BaseModel.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.).

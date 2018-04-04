@@ -1,9 +1,9 @@
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
-import com.qat.samples.sysmgmt.cfop.model.Cfop;
-import com.qat.samples.sysmgmt.nfeItens.model.NFImpostoDevolvido;
-import com.qat.samples.sysmgmt.nfeItens.model.NFNotaInfoItemImposto;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.cfop.model.Cfop;
+import com.econtabil.integration.domain.nfeItens.model.NFImpostoDevolvido;
+import com.econtabil.integration.domain.nfeItens.model.NFNotaInfoItemImposto;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.).

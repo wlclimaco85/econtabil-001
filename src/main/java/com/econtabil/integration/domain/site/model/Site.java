@@ -1,13 +1,13 @@
-package com.qat.samples.sysmgmt.site.model;
+package com.econtabil.integration.domain.site.model;
 
 import java.util.Date;
 import java.util.List;
 
-import com.qat.samples.sysmgmt.contabilidade.model.Plano;
-import com.qat.samples.sysmgmt.contabilidade.model.PlanoBySite;
-import com.qat.samples.sysmgmt.entidade.model.Empresa;
-import com.qat.samples.sysmgmt.produto.model.Servico;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.Empresa;
+import com.econtabil.integration.domain.contabilidade.model.Plano;
+import com.econtabil.integration.domain.enumerate.Enum.SiteTypeEnum;
+import com.econtabil.integration.domain.produto.model.Servico;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -46,19 +46,7 @@ public class Site extends ModelCosmeDamiao
 
 	private List<Plano> planoList;
 
-	public Integer getSiteTypeEnumValue()
-	{
-		if (siteTypeEnum != null)
-		{
-			return siteTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setSiteTypeEnumValue(Integer acaoTypeValue)
-	{
-		siteTypeEnum = SiteTypeEnum.enumForValue(acaoTypeValue);
-	}
+	
 
 	public Site()
 	{
@@ -186,7 +174,7 @@ public class Site extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "Site [getSiteTypeEnumValue()=" + getSiteTypeEnumValue() + ", getSiteTypeEnum()=" + getSiteTypeEnum()
+		return "Site [getSiteTypeEnum()=" + getSiteTypeEnum()
 				+ ", getId()=" + getId() + ", getNome()=" + getNome() + ", getUrl()=" + getUrl() + ", getServicoList()="
 				+ getServicoList() + ", getPlanoList()=" + getPlanoList() + ", getQuemSomos()=" + getQuemSomos()
 				+ ", getMissao()=" + getMissao() + ", getVisao()=" + getVisao() + ", getTitulo()=" + getTitulo()

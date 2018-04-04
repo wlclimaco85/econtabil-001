@@ -1,9 +1,9 @@
 /** create by system gera-java version 1.0.0 03/12/2016 13:29 : 12*/
-package com.qat.samples.sysmgmt.nfeItens.model;
+package com.econtabil.integration.domain.nfeItens.model;
 
-import com.qat.samples.sysmgmt.estado.model.Estado;
-import com.qat.samples.sysmgmt.util.model.DoisValores;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.util.model.DoisValores;
+import com.econtabil.integration.domain.util.model.Estado;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.).

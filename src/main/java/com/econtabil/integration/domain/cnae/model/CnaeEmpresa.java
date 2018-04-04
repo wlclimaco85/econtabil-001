@@ -1,5 +1,6 @@
 package com.econtabil.integration.domain.cnae.model;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

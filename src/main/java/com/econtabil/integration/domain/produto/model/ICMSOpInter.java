@@ -1,9 +1,9 @@
 /** create by system gera-java version 1.0.0 09/11/2016 19:59 : 12*/
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
 
-import com.qat.samples.sysmgmt.util.model.DoisValores;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.util.model.DoisValores;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

@@ -2,6 +2,8 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.enumerate.Enum.CdStatusTypeEnum;
+
 /**
  * The Class Document represents a generic formal business or personal document, such as driver's license or bylaws.
  */
@@ -36,20 +38,6 @@ public class Status extends ModelCosmeDamiao
 	public Status()
 	{
 
-	}
-
-	public Integer getStatusValue()
-	{
-		if (status != null)
-		{
-			return status.getValue();
-		}
-		return null;
-	}
-
-	public void setStatusValue(Integer acaoTypeValue)
-	{
-		status = CdStatusTypeEnum.enumForValue(acaoTypeValue);
 	}
 
 	public Integer getId()

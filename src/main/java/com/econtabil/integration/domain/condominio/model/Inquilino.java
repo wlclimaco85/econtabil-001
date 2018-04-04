@@ -3,8 +3,8 @@ package com.econtabil.integration.domain.condominio.model;
 import java.util.Date;
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.pessoa.model.Pessoa;
-import com.qat.framework.model.BaseModel.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

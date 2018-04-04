@@ -1,12 +1,13 @@
-package com.qat.samples.sysmgmt.pessoa.model;
+package com.econtabil.integration.domain.pessoa.model;
 
 import java.util.Date;
 import java.util.List;
 
-import com.qat.samples.sysmgmt.beneficios.model.BeneficioPessoa;
-import com.qat.samples.sysmgmt.dp.model.EventoPessoa;
-import com.qat.samples.sysmgmt.dp.model.HorarioFunc;
-import com.qat.samples.sysmgmt.dp.model.Salario;
+import com.econtabil.integration.domain.beneficios.model.BeneficioPessoa;
+import com.econtabil.integration.domain.dp.model.EventoPessoa;
+import com.econtabil.integration.domain.dp.model.HorarioFunc;
+import com.econtabil.integration.domain.dp.model.Salario;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

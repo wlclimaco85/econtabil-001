@@ -1,9 +1,10 @@
-package com.qat.samples.sysmgmt.ordemServico.model;
+package com.econtabil.integration.domain.ordemServico.model;
 
 import java.util.Date;
 import java.util.List;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.enumerate.Enum.OrdemServicoTypeEnum;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -30,20 +31,6 @@ public class OrdemServico extends ModelCosmeDamiao
 
 	/** The description. */
 	private OrdemServicoTypeEnum status;
-
-	public Integer getStatusValue()
-	{
-		if (status != null)
-		{
-			return status.getValue();
-		}
-		return null;
-	}
-
-	public void setStatusValue(Integer acaoTypeValue)
-	{
-		status = OrdemServicoTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	/**
 	 * Default constructor.

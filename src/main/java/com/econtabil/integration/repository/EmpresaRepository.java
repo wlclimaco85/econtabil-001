@@ -5,6 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import com.econtabil.integration.domain.Empresa;
 
+
+
 @Repository("empresaRepository")
 public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
 	

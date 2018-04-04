@@ -3,6 +3,7 @@ package com.econtabil.integration.domain.financeiro.model;
 import java.util.List;
 
 import com.econtabil.integration.domain.condpag.model.FormaPg;
+import com.econtabil.integration.domain.enumerate.Enum.ContasTypeEnum;
 import com.econtabil.integration.domain.util.model.DoisValores;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
@@ -49,23 +50,11 @@ public class Titulo extends ModelCosmeDamiao
 
 	private DoisValores situacao;
 
-	private FinanceiroStatusEnum financeiroEnum;
+	private ContasTypeEnum financeiroEnum;
 
 	private List<BaixaTitulo> listBaixa;
 
-	public Integer getFinanceiroEnumValue()
-	{
-		if (financeiroEnum != null)
-		{
-			return financeiroEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setFinanceiroEnumValue(Integer acaoTypeValue)
-	{
-		financeiroEnum = FinanceiroStatusEnum.enumForValue(acaoTypeValue);
-	}
+	
 
 	/**
 	 * Default constructor.
@@ -175,12 +164,12 @@ public class Titulo extends ModelCosmeDamiao
 		this.valor = valor;
 	}
 
-	public FinanceiroStatusEnum getFinanceiroEnum()
+	public ContasTypeEnum getFinanceiroEnum()
 	{
 		return financeiroEnum;
 	}
 
-	public void setFinanceiroEnum(FinanceiroStatusEnum financeiroEnum)
+	public void setFinanceiroEnum(ContasTypeEnum financeiroEnum)
 	{
 		this.financeiroEnum = financeiroEnum;
 	}
@@ -253,7 +242,7 @@ public class Titulo extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "Titulo [getFinanceiroEnumValue()=" + getFinanceiroEnumValue() + ", getId()=" + getId()
+		return "Titulo [getId()=" + getId()
 				+ ", getNumero()=" + getNumero() + ", getParcela()=" + getParcela() + ", getDataEmissao()="
 				+ getDataEmissao() + ", getDataVencimento()=" + getDataVencimento() + ", getDocId()=" + getDocId()
 				+ ", getTipoDoc()=" + getTipoDoc() + ", getObservacao()=" + getObservacao() + ", getValor()="

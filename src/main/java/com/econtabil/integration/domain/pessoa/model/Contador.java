@@ -1,4 +1,4 @@
-package com.qat.samples.sysmgmt.pessoa.model;
+package com.econtabil.integration.domain.pessoa.model;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

@@ -2,6 +2,10 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.AcaoEnum;
+import com.econtabil.integration.domain.enumerate.Enum.TabelaEnum;
+import com.econtabil.integration.domain.enumerate.Enum.TypeEnum;
+
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
  * setting.
@@ -31,48 +35,6 @@ public class ModelCosmeDamiao extends QATModel1
 	private List<Status> statusList;
 
 	private List<Note> notes;
-
-	public Integer getTabelaEnumValue()
-	{
-		if (tabelaEnum != null)
-		{
-			return tabelaEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setTabelaEnumValue(Integer acaoTypeValue)
-	{
-		tabelaEnum = TabelaEnum.enumForValue(acaoTypeValue);
-	}
-
-	public Integer getTypeValue()
-	{
-		if (type != null)
-		{
-			return type.getValue();
-		}
-		return null;
-	}
-
-	public void setAcaoEnumValue(Integer acaoTypeValue)
-	{
-		acaoType = AcaoEnum.enumForValue(acaoTypeValue);
-	}
-
-	public Integer getAcaoEnumValue()
-	{
-		if (acaoType != null)
-		{
-			return acaoType.getValue();
-		}
-		return null;
-	}
-
-	public void setTypeValue(Integer priorityValue)
-	{
-		type = TypeEnum.enumForValue(priorityValue);
-	}
 
 	/**
 	 * @return the parentKey
@@ -220,8 +182,7 @@ public class ModelCosmeDamiao extends QATModel1
 
 	@Override
 	public String toString() {
-		return "ModelCosmeDamiao [getTabelaEnumValue()=" + getTabelaEnumValue() + ", getTypeValue()=" + getTypeValue()
-				+ ", getAcaoEnumValue()=" + getAcaoEnumValue() + ", getParentId()=" + getParentId() + ", getType()="
+		return "ModelCosmeDamiao [ getParentId()=" + getParentId() + ", getType()="
 				+ getType() + ", getAcaoType()=" + getAcaoType() + ", getTabelaEnum()=" + getTabelaEnum()
 				+ ", getStatusList()=" + getStatusList() + ", getEmprId()=" + getEmprId() + ", getSite()=" + getSite()
 				+ ", getProcessId()=" + getProcessId() + ", getUserId()=" + getUserId() + ", getNotes()=" + getNotes()

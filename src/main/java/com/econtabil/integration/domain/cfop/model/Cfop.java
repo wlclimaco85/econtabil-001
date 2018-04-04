@@ -2,6 +2,8 @@ package com.econtabil.integration.domain.cfop.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.enumerate.Enum.CfopTypeEnum;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
@@ -51,7 +53,6 @@ public class Cfop extends ModelCosmeDamiao
 	{
 		super();
 		this.id = id;
-		setModelAction(modelAction);
 	}
 
 	public Cfop(Integer id, String cfop, String natureza, String simplificado, CfopTypeEnum cfopTypeEnum, Double icms,
@@ -70,7 +71,6 @@ public class Cfop extends ModelCosmeDamiao
 		this.cstPrincipal = cstPrincipal;
 		this.classFiscal = classFiscal;
 		this.observacao = observacao;
-		setModelAction(modelAction);
 	}
 
 	public Cfop(Integer id, String cfop) {
@@ -82,19 +82,7 @@ public class Cfop extends ModelCosmeDamiao
 		setModifyUser("system");
 	}
 
-	public Integer getCfopTypeEnumValue()
-	{
-		if (cfopTypeEnum != null)
-		{
-			return cfopTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setCfopTypeEnumValue(Integer acaoTypeValue)
-	{
-		cfopTypeEnum = CfopTypeEnum.enumForValue(acaoTypeValue);
-	}
+	
 
 	/**
 	 * Gets the id.
@@ -279,7 +267,7 @@ public class Cfop extends ModelCosmeDamiao
 	@Override
 	public String toString()
 	{
-		return "Cfop [getCfopTypeEnumValue()=" + getCfopTypeEnumValue() + ", getId()=" + getId() + ", getCfop()="
+		return "Cfop [getId()=" + getId() + ", getCfop()="
 				+ getCfop() + ", getNatureza()=" + getNatureza() + ", getSimplificado()=" + getSimplificado()
 				+ ", getCfopTypeEnum()=" + getCfopTypeEnum() + ", getIcms()=" + getIcms() + ", getIcmsReduzido()="
 				+ getIcmsReduzido() + ", getMargemAgregadaST()=" + getMargemAgregadaST() + ", getCstPrincipal()="

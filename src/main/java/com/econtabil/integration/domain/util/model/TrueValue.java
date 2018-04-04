@@ -1,8 +1,6 @@
 package com.econtabil.integration.domain.util.model;
 
-import java.util.Date;
-
-import com.qat.samples.sysmgmt.estado.model.Estado;
+import com.econtabil.integration.domain.enumerate.Enum.TrueValueTypeEnum;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -23,21 +21,6 @@ public class TrueValue extends ModelCosmeDamiao
 
 	/** The data. */
 	private Long label;
-
-
-	public Integer getTrueValueTypeEnumValue()
-	{
-		if (valueType != null)
-		{
-			return valueType.getValue();
-		}
-		return null;
-	}
-
-	public void setTrueValueEnumValue(Integer acaoTypeValue)
-	{
-		valueType = TrueValueTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	public Integer getId() {
 		return id;
@@ -73,7 +56,7 @@ public class TrueValue extends ModelCosmeDamiao
 
 	@Override
 	public String toString() {
-		return "TrueValue [getTrueValueTypeEnumValue()=" + getTrueValueTypeEnumValue() + ", getId()=" + getId()
+		return "TrueValue [getId()=" + getId()
 				+ ", getValueType()=" + getValueType() + ", getValor()=" + getValor() + ", getLabel()=" + getLabel()
 				+ ", toString()=" + super.toString() + "]";
 	}

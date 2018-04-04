@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.econtabil.integration.domain.conta.model.ContaCorrente;
 import com.econtabil.integration.domain.contabilidade.model.Plano;
+import com.econtabil.integration.domain.enumerate.Enum.EmpresaTypeEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -39,20 +40,6 @@ public class Message extends Entidade
 		super();
 	}
 
-	public Integer getPermissaoTypeEnumValue()
-	{
-		if (permissaoTypeEnum != null)
-		{
-			return permissaoTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setPermissaoTypeEnumValue(Integer acaoTypeValue)
-	{
-		permissaoTypeEnum = EmpresaTypeEnum.enumForValue(acaoTypeValue);
-	}
-
 	public EmpresaTypeEnum getPermissaoTypeEnum() {
 		return permissaoTypeEnum;
 	}
@@ -70,7 +57,7 @@ public class Message extends Entidade
 		super();
 		setId(id);
 		setNome(nome);
-		setEntidadeEnum(EntidadeTypeEnum.ADVOCACIA);
+		setEntidadeEnum(EmpresaTypeEnum.ADVOCACIA);
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 	}
@@ -193,7 +180,7 @@ public class Message extends Entidade
 
 	@Override
 	public String toString() {
-		return "Empresa [getPermissaoTypeEnumValue()=" + getPermissaoTypeEnumValue() + ", getPermissaoTypeEnum()="
+		return "Empresa [getPermissaoTypeEnum()="
 				+ getPermissaoTypeEnum() + ", getPlanoList()=" + getPlanoList() + ", getQntFilial()=" + getQntFilial()
 				+ ", getQntDeposito()=" + getQntDeposito() + ", getFilialList()=" + getFilialList()
 				+ ", getDepositoList()=" + getDepositoList() + ", getContaCorrenteList()=" + getContaCorrenteList()

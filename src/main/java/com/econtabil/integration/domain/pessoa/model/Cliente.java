@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.econtabil.integration.domain.convenio.model.ConvenioPessoa;
 import com.econtabil.integration.domain.dp.model.Profissao;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

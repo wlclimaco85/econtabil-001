@@ -1,11 +1,11 @@
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
 import java.util.List;
 
-import com.qat.samples.sysmgmt.util.model.Email;
-import com.qat.samples.sysmgmt.util.model.Endereco;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
-import com.qat.samples.sysmgmt.util.model.Telefone;
+import com.econtabil.integration.domain.util.model.Email;
+import com.econtabil.integration.domain.util.model.Endereco;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.util.model.Telefone;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

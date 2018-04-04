@@ -1,8 +1,9 @@
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
 import java.util.Date;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.enumerate.Enum.PrecoTypeEnum;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -49,25 +50,6 @@ public class Preco extends ModelCosmeDamiao
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 		setParentId(1);
-	}
-
-
-
-
-
-
-	public Integer getPrecoTypeEnumValue()
-	{
-		if (precoTypeEnum != null)
-		{
-			return precoTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setPrecoTypeEnumValue(Integer acaoTypeValue)
-	{
-		precoTypeEnum = PrecoTypeEnum.enumForValue(acaoTypeValue);
 	}
 
 	/**
@@ -199,7 +181,7 @@ public class Preco extends ModelCosmeDamiao
 	@Override
 	public String toString()
 	{
-		return "TabPreco [getPrecoTypeEnumValue()=" + getPrecoTypeEnumValue() + ", getId()=" + getId()
+		return "TabPreco [getId()=" + getId()
 				+ ", getDataMarcacao()=" + getDataMarcacao() + ", getPrecoTypeEnum()=" + getPrecoTypeEnum()
 				+ ", getValor()=" + getValor() + ", getDataProInicial()=" + getDataProInicial()
 				+ ", getDataProFinal()=" + getDataProFinal() + ", getEntidadeId()=" + getEntidadeId()

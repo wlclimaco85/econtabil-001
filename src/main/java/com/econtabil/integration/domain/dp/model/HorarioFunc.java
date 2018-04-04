@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.dp.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.DoisValores;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 

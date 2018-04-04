@@ -2,6 +2,9 @@ package com.econtabil.integration.domain.util.model;
 
 import java.util.Date;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
+import com.econtabil.integration.domain.enumerate.Enum.TelefoneTypeEnum;
+
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
  * setting.
@@ -41,19 +44,7 @@ public class Telefone extends ModelCosmeDamiao
 		setModifyUser("system");
 	}
 
-	public Integer getTelefoneTypeEnumValue()
-	{
-		if (telefoneTypeEnum != null)
-		{
-			return telefoneTypeEnum.getValue();
-		}
-		return null;
-	}
 
-	public void setTelefoneTypeEnumValue(Integer acaoTypeValue)
-	{
-		telefoneTypeEnum = TelefoneTypeEnum.enumForValue(acaoTypeValue);
-	}
 
 	/**
 	 * Gets the id.
@@ -126,7 +117,7 @@ public class Telefone extends ModelCosmeDamiao
 	@Override
 	public String toString()
 	{
-		return "Telefone [getTelefoneTypeEnumValue()=" + getTelefoneTypeEnumValue() + ", getId()=" + getId()
+		return "Telefone [getId()=" + getId()
 				+ ", getDdd()=" + getDdd() + ", getNumero()=" + getNumero() + ", getTelefoneTypeEnum()="
 				+ getTelefoneTypeEnum() + ", toString()=" + super.toString() + "]";
 	}

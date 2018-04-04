@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.econtabil.integration.domain.condpag.model.CondPag;
 import com.econtabil.integration.domain.condpag.model.TipoPag;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

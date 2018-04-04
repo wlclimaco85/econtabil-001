@@ -1,11 +1,12 @@
-package com.qat.samples.sysmgmt.pessoa.model;
+package com.econtabil.integration.domain.pessoa.model;
 
 import java.util.Date;
 import java.util.List;
 
-import com.qat.samples.sysmgmt.clinica.model.Consulta;
-import com.qat.samples.sysmgmt.dp.model.HorarioFunc;
-import com.qat.samples.sysmgmt.util.model.DoisValoresParent;
+import com.econtabil.integration.domain.clinica.model.Consulta;
+import com.econtabil.integration.domain.dp.model.HorarioFunc;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
+import com.econtabil.integration.domain.util.model.DoisValoresParent;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

@@ -2,6 +2,7 @@ package com.econtabil.integration.domain.nf.model;
 
 import java.util.List;
 
+import com.econtabil.integration.domain.enumerate.Enum.NotaTypeEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

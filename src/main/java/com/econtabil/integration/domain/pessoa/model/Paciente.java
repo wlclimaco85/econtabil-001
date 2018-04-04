@@ -1,11 +1,11 @@
-package com.qat.samples.sysmgmt.pessoa.model;
+package com.econtabil.integration.domain.pessoa.model;
 
 import java.util.Date;
 import java.util.List;
 
-import com.qat.framework.model.BaseModel.PersistenceActionEnum;
-import com.qat.samples.sysmgmt.clinica.model.Consulta;
-import com.qat.samples.sysmgmt.clinica.model.PlanoSaudePessoa;
+import com.econtabil.integration.domain.clinica.model.Consulta;
+import com.econtabil.integration.domain.clinica.model.PlanoSaudePessoa;
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

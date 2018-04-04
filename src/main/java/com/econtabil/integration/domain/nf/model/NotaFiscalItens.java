@@ -6,8 +6,8 @@ import com.econtabil.integration.domain.cfop.model.Cfop;
 import com.econtabil.integration.domain.contabilidade.model.Plano;
 import com.econtabil.integration.domain.produto.model.ProdutoEmpresa;
 import com.econtabil.integration.domain.produto.model.Servico;
+import com.econtabil.integration.domain.util.model.Estado;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
-import com.qat.samples.sysmgmt.estado.model.Estado;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

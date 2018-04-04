@@ -5,8 +5,8 @@ import java.util.List;
 
 import com.econtabil.integration.domain.conta.model.ContaCorrente;
 import com.econtabil.integration.domain.entidade.model.Entidade;
-import com.econtabil.integration.domain.entidade.model.EntidadeTypeEnum;
 import com.econtabil.integration.domain.entidade.model.TarefaEnt;
+import com.econtabil.integration.domain.enumerate.Enum.EmpresaTypeEnum;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -31,7 +31,7 @@ public class Condominio extends Entidade
 		super();
 		setId(id);
 		setNome(nome);
-		setEntidadeEnum(EntidadeTypeEnum.CONDOMINIO);
+		setEntidadeEnum(EmpresaTypeEnum.CONDOMINIO);
 		setModifyDateUTC((new Date()).getTime());
 		setModifyUser("system");
 	}

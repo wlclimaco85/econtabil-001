@@ -1,6 +1,7 @@
-package com.qat.samples.sysmgmt.produto.model;
+package com.econtabil.integration.domain.produto.model;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.enumerate.Enum.EstoqueTypeEnum;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
@@ -30,20 +31,6 @@ public class Estoque extends ModelCosmeDamiao
 
 	public Estoque(int i, String string) {
 		// TODO Auto-generated constructor stub
-	}
-
-	public Integer getEstoqueTypeEnumValue()
-	{
-		if (estoqueTypeEnum != null)
-		{
-			return estoqueTypeEnum.getValue();
-		}
-		return null;
-	}
-
-	public void setEstoqueTypeEnumValue(Integer acaoTypeValue)
-	{
-		estoqueTypeEnum = EstoqueTypeEnum.enumForValue(acaoTypeValue);
 	}
 
 	/**
@@ -112,15 +99,6 @@ public class Estoque extends ModelCosmeDamiao
 	public void setQuant(Double quant)
 	{
 		this.quant = quant;
-	}
-
-	@Override
-	public String toString()
-	{
-		return "Estoque [getEstoqueTypeEnumValue()=" + getEstoqueTypeEnumValue() + ", getId()=" + getId()
-				+ ", getEstoqueTypeEnum()=" + getEstoqueTypeEnum() + ", getUltimoMov()=" + getUltimoMov()
-				+ ", getQuant()=" + getQuant() + ", toString()="
-				+ super.toString() + "]";
 	}
 
 }

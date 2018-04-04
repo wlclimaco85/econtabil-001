@@ -3,6 +3,8 @@ package com.econtabil.integration.domain.util.model;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 
+import com.econtabil.integration.domain.enumerate.Enum.PersistenceActionEnum;
+
 /**
  * This class may be used as a base or super class for a Model object.<br/>
  * This class or the {@link QATModelOL} class should be used as the super class for ALL model objects. The difference
@@ -33,6 +35,7 @@ public class QATModel1
 		/** The modify date. */
 		private Long modifyDateUTC;
 
+		private PersistenceActionEnum modelAction;
 
 		/**
 		 * Gets the creates the user.
@@ -114,11 +117,19 @@ public class QATModel1
 			this.modifyDateUTC = modifyDateUTC;
 		}
 
+		public PersistenceActionEnum getModelAction() {
+			return modelAction;
+		}
+
+		public void setModelAction(PersistenceActionEnum modelAction) {
+			this.modelAction = modelAction;
+		}
+
 		@Override
 		public String toString() {
 			return "QATModel1 [getCreateUser()=" + getCreateUser() + ", getCreateDateUTC()=" + getCreateDateUTC()
 					+ ", getModifyUser()=" + getModifyUser() + ", getModifyDateUTC()=" + getModifyDateUTC()
-					+ ", toString()=" + super.toString() + "]";
+					+ ", getModelAction()=" + getModelAction() + ", toString()=" + super.toString() + "]";
 		}
 
 }

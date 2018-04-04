@@ -1,8 +1,8 @@
-package com.qat.samples.sysmgmt.ordemServico.model;
+package com.econtabil.integration.domain.ordemServico.model;
 
 import java.util.Date;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 // TODO: Auto-generated Javadoc
 /**

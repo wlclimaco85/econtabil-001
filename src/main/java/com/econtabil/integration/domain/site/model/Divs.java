@@ -1,8 +1,8 @@
-package com.qat.samples.sysmgmt.site.model;
+package com.econtabil.integration.domain.site.model;
 
 import java.util.List;
 
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer

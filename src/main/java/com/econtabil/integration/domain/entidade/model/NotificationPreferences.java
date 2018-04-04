@@ -1,5 +1,6 @@
 package com.econtabil.integration.domain.entidade.model;
 
+import com.econtabil.integration.domain.enumerate.Enum.NotificationTypeEnum;
 import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**

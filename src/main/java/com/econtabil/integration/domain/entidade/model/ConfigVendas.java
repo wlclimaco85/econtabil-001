@@ -1,13 +1,6 @@
 package com.econtabil.integration.domain.entidade.model;
 
-import java.util.Date;
-import java.util.List;
-
-import com.qat.samples.sysmgmt.conta.model.ContaCorrente;
-import com.qat.samples.sysmgmt.contabilidade.model.Plano;
-import com.qat.samples.sysmgmt.pessoa.model.Socio;
-import com.qat.samples.sysmgmt.util.model.DoisValores;
-import com.qat.samples.sysmgmt.util.model.ModelCosmeDamiao;
+import com.econtabil.integration.domain.util.model.ModelCosmeDamiao;
 
 /**
  * This class is a representation of an Account (i.e Checking, Savings, etc.). This represents an account for a transfer
